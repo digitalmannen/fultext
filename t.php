@@ -40,5 +40,9 @@ $html = Markdown::defaultTransform($text);
 		echo $html;
 	?>
 	</div>
+
+	
+
+
     </body>
 </html>
