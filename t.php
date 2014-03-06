@@ -29,11 +29,16 @@ $html = Markdown::defaultTransform($text);
     <head>
         <title>Martins texter</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
-		<?php
-			# Put HTML content in the document
-			echo $html;
-		?>
+	<div id="container">
+	
+	<?php
+	#<div style="width: 20em; margin-left: auto; margin-right: auto;">
+	# Put HTML content in the document
+		echo $html;
+	?>
+	</div>
     </body>
 </html>

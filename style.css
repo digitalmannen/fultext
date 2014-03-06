@@ -1,0 +1,19 @@
+body {
+	background-color : #333333;
+	color: #eeeeee;
+ }
+
+/* Container for page */ 
+#container { 
+	padding: 0; 
+	width: 400px; 
+	margin: 0 auto; 
+	/*background-color : #333333;*/	
+	font-family: sans-serif;
+	font-size: larger 	
+	}
+
+/* Standard paragraph style  
+blockquote { font-weight: bold; font-size: 1.1em; line-height: 1.5em; }
+*/
+
