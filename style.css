@@ -1,7 +1,20 @@
+
+
 body {
 	background-color : #333333;
 	color: #eeeeee;
  }
+/* Links on the page */
+A:link {
+ COLOR: #F0E68C /*The color of the link*/
+}
+A:visited {
+ COLOR: #FFFACD /*The color of the visited link*/
+}
+A:hover {
+ COLOR: green /*The color of the mouseover or 'hover' link*/
+}
+
 
 /* Container for page */ 
 #container { 
