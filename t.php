@@ -29,10 +29,12 @@ $html = Markdown::defaultTransform($text);
     <head>
         <title>Fultext</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="style2.css" />
     </head>
     <body>
-	<div id="container">
+
+<div id="wrap">
+	<div id="main">
 	
 	<?php
 	#<div style="width: 20em; margin-left: auto; margin-right: auto;">
@@ -40,7 +42,25 @@ $html = Markdown::defaultTransform($text);
 		echo $html;
 	?>
 	</div>
+	<div id="sidebar">
+		<h2>Övriga texter</h2>
+		<a href='upload.php'>ladda upp</a><br>
+		<?php
 
+		if ($dir = opendir('data/')) {
+    			while (false !== ($entry = readdir($dir))) {
+        		if ($entry != "." && $entry != "..") 			{
+            	$number = strstr($entry, '.', true);
+            	echo "<a href ='t.php?f=$number'> $entry</a><br>";
+                 
+		}
+    		}
+    closedir($dir);
+}
+//$number = strstr($entry, '.', true);
+?>
+	</div>
+</div>
 	
 
 
