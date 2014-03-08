@@ -1,5 +1,5 @@
 body {
-	background-color : #333333;/**/
+	background-color : #242424;/**/
 	color: #eeeeee;
 	font-family: sans-serif;
 	font-size: larger;	
@@ -60,13 +60,14 @@ margin:0 0 1em;
 }
 
 /* Container for page */ 
-#container { 
+#wrap { 
 	padding: 0; 
-	width: 400px; 
+	width: 800px; 
 	margin: 0 auto; 
+	/*
 	font-family: sans-serif;
 	font-size: larger;	
-	/*background-color : #333333;*/
+	background-color : #333333;
 
 	line-height:1.2; 
 	padding:1em; 
@@ -78,6 +79,6 @@ margin:0 0 1em;
 	-moz-box-shadow:0px 9px 15px -9px rgba(0,0,0,0.4); 
 	-webkit-box-shadow:0px 9px 15px -9px rgba(0,0,0,0.4); 
 	box-shadow:0px 9px 15px -9px rgba(0,0,0,0.4); 
-		
+	*/	
 	}
 
