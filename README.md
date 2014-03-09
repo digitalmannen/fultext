@@ -1,6 +1,6 @@
 #Fultext 
 
-Fultext (uglytext) is a quick way to save and share a text with others and retain ownership of your own text. 
+Fultext (quicktext) is a quick way to save and share a text with others and retain ownership of your own text. 
 
 Install fultext on your server (PHP 5.3 or later required) write a markdown file and upload the .md file to the 'data' directory (using ftp or preferred method).
 

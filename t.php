@@ -50,8 +50,8 @@ $html = Markdown::defaultTransform($text);
 		if ($dir = opendir('data/')) {
     			while (false !== ($entry = readdir($dir))) {
         		if ($entry != "." && $entry != "..") 			{
-            	$number = strstr($entry, '.', true);
-            	echo "<a href ='t.php?f=$number'> $entry</a><br>";
+            	$fileName = strstr($entry, '.', true);
+            	echo "<a href ='t.php?f=$fileName'> $fileName</a><br>";
                  
 		}
     		}
@@ -60,6 +60,20 @@ $html = Markdown::defaultTransform($text);
 //$number = strstr($entry, '.', true);
 ?>
 	</div>
+<div id="footer">
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<!-- <a class="a2a_dd" href="http://www.addtoany.com/share_save"></a> -->
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_blogger_post"></a>
+<a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+</div>
 </div>
 	
 
