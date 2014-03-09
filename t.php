@@ -27,7 +27,7 @@ $html = Markdown::defaultTransform($text);
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Fultext</title>
+        <title><?php echo htmlspecialchars($_GET["f"]);?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css" />
     </head>
@@ -60,6 +60,7 @@ $html = Markdown::defaultTransform($text);
 //$number = strstr($entry, '.', true);
 ?>
 	</div>
+
 <div id="footer">
 <!-- AddToAny BEGIN -->
 <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
