@@ -60,12 +60,12 @@ $html = Markdown::defaultTransform($text);
 //$number = strstr($entry, '.', true);
 ?>
 	</div>
-
-<div id="footer">
+<!-- tar bort kanpparna tillvidare skall nog inte vara med i -->
+<!--<div id="footer"> -->
 <!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<!--<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
 <!-- <a class="a2a_dd" href="http://www.addtoany.com/share_save"></a> -->
-<a class="a2a_button_facebook"></a>
+<!--<a class="a2a_button_facebook"></a>
 <a class="a2a_button_twitter"></a>
 <a class="a2a_button_google_plus"></a>
 <a class="a2a_button_reddit"></a>
@@ -74,7 +74,7 @@ $html = Markdown::defaultTransform($text);
 </div>
 <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
 <!-- AddToAny END -->
-</div>
+<!--</div>-->
 </div>
 	
 
