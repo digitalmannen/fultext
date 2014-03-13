@@ -13,6 +13,7 @@
 	use \Michelf\Markdown;
 
 	# Read file and pass content through the Markdown parser
+<<<<<<< HEAD
 	#$mdText = file_get_contents('1.md');
 	@$mdText = file_get_contents('data/' .htmlspecialchars($_GET["f"]) .'.md');
 
@@ -21,6 +22,16 @@
 	}
 
 	$htmlText = Markdown::defaultTransform($mdText);
+=======
+	#$text = file_get_contents('1.md');
+	@$text = file_get_contents('data/' .htmlspecialchars($_GET["f"]) .'.md');
+
+	if ($text == FALSE){
+		$text = file_get_contents('std.md');
+	}
+
+	$html = Markdown::defaultTransform($text);
+>>>>>>> 8b042e241b7e4ed9852c7e2edaf289e52ad073d7
 
 ?>
 <!DOCTYPE html>
@@ -34,6 +45,7 @@
 
 		<div id="wrap">
 			<div id="main">
+<<<<<<< HEAD
 			<?php
 				# Put HTML content in the document
 				echo $htmlText;
@@ -52,6 +64,29 @@
 			    		closedir($dir);
 					}
 				?>
+=======
+				<?php
+					#<div style="width: 20em; margin-left: auto; margin-right: auto;">
+					# Put HTML content in the document
+					echo $html;
+				?>
+			</div>
+			<div id="sidebar">
+				<h2>Andra texter</h2>
+				<!--<a href='upload.php'>ladda upp</a><br>-->
+					<?php
+						if ($dir = opendir('data/')) {
+				    		while (false !== ($entry = readdir($dir))) {
+					        	if ($entry != "." && $entry != "..") {
+					           		$fileName = strstr($entry, '.', true);
+					           		echo "<a href ='t.php?f=$fileName'> $fileName</a><br>";          
+								}
+				    		}
+				    		closedir($dir);
+						}
+						//$number = strstr($entry, '.', true);
+					?>
+>>>>>>> 8b042e241b7e4ed9852c7e2edaf289e52ad073d7
 			</div>
 			<!-- tar bort kanpparna tillvidare skall nog inte vara med i-->
 			<!--<div id="footer">-->
