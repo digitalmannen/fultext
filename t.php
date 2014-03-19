@@ -10,7 +10,8 @@
 	});
 
 	# Get Markdown class
-	use \Michelf\Markdown;
+	#use \Michelf\Markdown;
+	use \Michelf\MarkdownExtra;
 
 	# Read file and pass content through the Markdown parser
 
@@ -21,7 +22,8 @@
 		$mdText = file_get_contents('std.md');
 	}
 
-	$htmlText = Markdown::defaultTransform($mdText);
+	//$htmlText = Markdown::defaultTransform($mdText);
+	$htmlText = MarkdownExtra::defaultTransform($mdText);
 
 
 ?>
